@@ -21,7 +21,7 @@ if(isset($_POST['username'])){
     $address = $_POST['address'];
     $password = $_POST['password'];
     
-    $sql = "INSERT INTO `ecom`.`signup` (`username`, `email`, `address`, `password`) VALUES ('$username ', '$email', '$address', '$password');";
+    $sql = "INSERT INTO `ecom`.`login` (`username`, `email`, `address`, `password`) VALUES ('$username ', '$email', '$address', '$password');";
     // echo $sql;
 
     // Execute the query
@@ -65,7 +65,7 @@ if(isset($_POST['username'])){
           <input type="text" name="address" id="address" placeholder="address" />
           <input type="password" name="password" id="password" placeholder="Password"/>
           <button class = "btn-hov">Sign up</button>
-          <p class="message">Already an user? <a href="./login.html">Login</a></p>
+          <p class="message">Already an user? <a href="./login.php">Login</a></p>
         </form>
       </div>
     </div>
